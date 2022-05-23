@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практика 2, Задание №5</title>
+</head>
+<body>
+    <p id ="result"></p>
+    <script>
+        const min = parseInt(prompt(`Введите минимальное значение:`));
+        const max = parseInt(prompt(`Введите максимальное значение:`));
+
+        // Math.trunc(Math.random *(max + 1)) -> [0..max]
+        // Math.trunc(Math.random() * 256) -> [0.255]
+        
+        const random = Math.trunc(min + Math.random() * (max - min + 1));
+
+        document.getElementById("result").innerHTML = 
+        `Случайное число от ${min} до ${max}: ${random}`;
+        
+    </script>
+</body>
+</html>

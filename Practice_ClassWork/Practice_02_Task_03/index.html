@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практика 2, Задание №4</title>
+</head>
+<body>
+    <p id ="result"></p>
+    <script>
+        const tempF = parseFloat(prompt(`Введите температуру в градусах Фаренгейта:`));
+
+        const tempC = 5 / 9 * (tempF - 32);
+
+        document.getElementById("result").innerHTML = 
+        `Температура в градусах цельсия ${tempC.toFixed(2)}`;
+        
+    </script>
+</body>
+</html>
